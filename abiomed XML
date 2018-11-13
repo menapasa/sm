@@ -1,0 +1,22 @@
+<?xml version= "1.0" encoding= "UTF-8" ?>
+<Module specificationVersion= '2'>
+  <ModulePrefs
+    title= "Abiomed YouTube Channel"
+    thumbnail= "https://www.youtube.com/user/AbiomedImpella/featured">
+  <content type= "html">
+    <![CDATA[
+      <script type= "text/JavaScript">
+        // Get the preferences for the current user
+        var prefs = new gadgets.Prefs();
+        function abiomed_youtube_channel() {
+          var html="Abiomed YouTube Channel!";
+          document.getElementById("content_div").style.backgroundColor=pres.getString
+          document.getElementById("content_div").innerHTML = html;
+          gadgets.window.adjustHeight();
+        }
+        gadgets.until.registerOnLoadHandler(abiomed_youtube_channel);
+      </script>
+      <div id= "content_div"></div>
+    ]]>
+  </content>
+</module>
